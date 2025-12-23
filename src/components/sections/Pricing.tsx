@@ -1,9 +1,9 @@
-
-import { Check } from 'lucide-react';
+import { Check, ClipboardCheck, Sparkles, Wrench } from 'lucide-react';
 
 const priceList = [
     {
         name: "Visita Técnica",
+        icon: <ClipboardCheck className="w-8 h-8 text-blue-600" />,
         price: "GRATIS",
         description: "Diagnóstico y presupuesto sin cargo",
         features: [
@@ -16,6 +16,7 @@ const priceList = [
     },
     {
         name: "Mantenimiento y Sanitización",
+        icon: <Sparkles className="w-8 h-8 text-blue-600" />,
         price: "$60.000",
         description: "Limpieza profunda y desinfección",
         features: [
@@ -29,6 +30,7 @@ const priceList = [
     },
     {
         name: "Instalación Aire Acondicionado",
+        icon: <Wrench className="w-8 h-8 text-blue-600" />,
         price: "$180.000",
         description: "Instalación profesional garantizada",
         features: [
@@ -71,6 +73,9 @@ export const Pricing = () => {
                             )}
 
                             <div className="mb-6">
+                                <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+                                    {plan.icon}
+                                </div>
                                 <h3 className="text-2xl font-bold text-gray-900">{plan.name}</h3>
                                 <p className="mt-2 text-sm text-gray-500">{plan.description}</p>
                             </div>
