@@ -24,7 +24,8 @@ const priceList = [
             "Sanitización completa",
             "Chequeo de gas y presiones",
             "Limpieza de filtros",
-            "Prueba de rendimiento"
+            "Prueba de rendimiento",
+            <strong className="text-gray-900">Materiales incluidos</strong>
         ],
         highlight: true
     },
