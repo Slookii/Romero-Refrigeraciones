@@ -19,7 +19,7 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold text-white">Llamanos</h4>
-                                    <p className="text-gray-400">+54 9 380 412 3456</p>
+                                    <p className="text-gray-400">+54 9 380 480 8109</p>
                                 </div>
                             </div>
 
@@ -29,13 +29,13 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold text-white">WhatsApp</h4>
-                                    <a href="https://wa.me/5493804123456" className="text-gray-400 hover:text-green-400 transition-colors">Enviar mensaje directo</a>
+                                    <a href="https://wa.me/5493804808109" className="text-gray-400 hover:text-green-400 transition-colors">Enviar mensaje directo</a>
                                 </div>
                             </div>
 
                             <div className="flex items-start">
                                 <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <Clock className="w-6 h-6 text-secondary-400" />
+                                    <Clock className="w-6 h-6 text-amber-400" />
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold text-white">Horarios de Atención</h4>

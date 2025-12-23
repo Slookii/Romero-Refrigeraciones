@@ -96,7 +96,7 @@ export const Pricing = () => {
                             </ul>
 
                             <a
-                                href={`https://wa.me/5493804123456?text=Hola, me interesa el servicio de ${plan.name}`}
+                                href={`https://wa.me/5493804808109?text=Hola, me interesa el servicio de ${plan.name}`}
                                 target="_blank"
                                 className={`w-full py-3 px-4 rounded-lg font-bold text-center transition-colors ${plan.highlight
                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
