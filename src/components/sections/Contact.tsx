@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, MapPin, MessageCircle, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -33,45 +34,62 @@ export const Contact = () => {
                         </p>
 
                         <div className="space-y-6">
-                            <div className="flex items-start">
-                                <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <Phone className="w-6 h-6 text-blue-400" />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-white">Llamanos</h4>
-                                    <p className="text-gray-400">+54 9 380 480 8109</p>
-                                </div>
-                            </div>
+                            <div className="space-y-6">
+                                <motion.a
+                                    href="tel:+5493804808109"
+                                    whileHover={{ x: 10 }}
+                                    className="flex items-start p-4 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer block"
+                                >
+                                    <div className="bg-gray-800 p-3 rounded-lg mr-4 shrink-0">
+                                        <Phone className="w-6 h-6 text-blue-400" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white">Llamanos</h4>
+                                        <p className="text-gray-400">+54 9 380 480 8109</p>
+                                    </div>
+                                </motion.a>
 
-                            <div className="flex items-start">
-                                <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <MessageCircle className="w-6 h-6 text-green-500" />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-white">WhatsApp</h4>
-                                    <a href="https://wa.me/5493804808109" className="text-gray-400 hover:text-green-400 transition-colors">Enviar mensaje directo</a>
-                                </div>
-                            </div>
+                                <motion.a
+                                    href="https://wa.me/5493804808109"
+                                    target="_blank"
+                                    whileHover={{ x: 10 }}
+                                    className="flex items-start p-4 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer block"
+                                >
+                                    <div className="bg-gray-800 p-3 rounded-lg mr-4 shrink-0">
+                                        <MessageCircle className="w-6 h-6 text-green-500" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white">WhatsApp</h4>
+                                        <p className="text-gray-400">Enviar mensaje directo</p>
+                                    </div>
+                                </motion.a>
 
-                            <div className="flex items-start">
-                                <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <Clock className="w-6 h-6 text-amber-400" />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-white">Horarios de Atención</h4>
-                                    <p className="text-gray-400">Lunes a Sábado: 8:00 - 20:00 hs</p>
-                                    <p className="text-gray-500 text-sm">Disponibles para urgencias 24hs</p>
-                                </div>
-                            </div>
+                                <motion.div
+                                    whileHover={{ x: 10 }}
+                                    className="flex items-start p-4 rounded-xl hover:bg-gray-800 transition-colors"
+                                >
+                                    <div className="bg-gray-800 p-3 rounded-lg mr-4 shrink-0">
+                                        <Clock className="w-6 h-6 text-amber-400" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white">Horarios de Atención</h4>
+                                        <p className="text-gray-400">Lunes a Sábado: 8:00 - 20:00 hs</p>
+                                        <p className="text-gray-500 text-sm">Disponibles para urgencias 24hs</p>
+                                    </div>
+                                </motion.div>
 
-                            <div className="flex items-start">
-                                <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <MapPin className="w-6 h-6 text-red-400" />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-white">Zona de Cobertura</h4>
-                                    <p className="text-gray-400">La Rioja Capital y alrededores</p>
-                                </div>
+                                <motion.div
+                                    whileHover={{ x: 10 }}
+                                    className="flex items-start p-4 rounded-xl hover:bg-gray-800 transition-colors"
+                                >
+                                    <div className="bg-gray-800 p-3 rounded-lg mr-4 shrink-0">
+                                        <MapPin className="w-6 h-6 text-red-400" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white">Zona de Cobertura</h4>
+                                        <p className="text-gray-400">La Rioja Capital y alrededores</p>
+                                    </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>

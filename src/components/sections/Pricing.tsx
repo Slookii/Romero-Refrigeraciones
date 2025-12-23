@@ -1,4 +1,5 @@
 import { Check, ClipboardCheck, Sparkles, Wrench } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const priceList = [
     {
@@ -58,11 +59,13 @@ export const Pricing = () => {
 
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {priceList.map((plan, index) => (
-                        <div
+                        <motion.div
                             key={index}
+                            whileHover={{ y: -8 }}
+                            transition={{ type: "spring", stiffness: 300 }}
                             className={`relative p-8 bg-white/80 backdrop-blur-sm border rounded-2xl flex flex-col ${plan.highlight
                                 ? 'border-blue-500 ring-2 ring-blue-500 shadow-xl scale-105 z-10'
-                                : 'border-gray-200 hover:border-blue-300 transition-colors'
+                                : 'border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all'
                                 }`}
                         >
                             {plan.highlight && (
@@ -95,17 +98,19 @@ export const Pricing = () => {
                                 ))}
                             </ul>
 
-                            <a
+                            <motion.a
                                 href={`https://wa.me/5493804808109?text=Hola, me interesa el servicio de ${plan.name}`}
                                 target="_blank"
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
                                 className={`w-full py-3 px-4 rounded-lg font-bold text-center transition-colors ${plan.highlight
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-blue-500/30'
                                     : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
                                     }`}
                             >
                                 Consultar
-                            </a>
-                        </div>
+                            </motion.a>
+                        </motion.div>
                     ))}
                 </div>
 
