@@ -24,8 +24,7 @@ const priceList = [
             "Sanitización completa",
             "Chequeo de gas y presiones",
             "Limpieza de filtros",
-            "Prueba de rendimiento",
-            <strong className="text-gray-900">Materiales incluidos</strong>
+            "Prueba de rendimiento"
         ],
         highlight: true
     },
@@ -39,7 +38,8 @@ const priceList = [
             "Vacío de cañerías con bomba",
             "Control de fugas",
             "Garantía de instalación",
-            "Desinstalación: $60.000"
+            "Desinstalación: $60.000",
+            <strong className="text-gray-900">Materiales incluidos</strong>
         ],
         highlight: false
     }
