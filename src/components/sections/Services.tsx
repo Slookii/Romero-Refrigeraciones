@@ -13,7 +13,7 @@ const services = [
         icon: <Zap className="w-8 h-8 text-white" />,
         title: "Electricidad Domiciliaria",
         description: "Instalaciones completas, tableros eléctricos, búsqueda de cortocircuitos, instalación de luminarias y tomacorrientes.",
-        color: "bg-secondary-500"
+        color: "bg-amber-500"
     },
     {
         icon: <Wrench className="w-8 h-8 text-white" />,
@@ -31,7 +31,7 @@ const services = [
         icon: <Clock className="w-8 h-8 text-white" />,
         title: "Instalación de Protecciones",
         description: "Colocación de protectores de tensión para cuidar tus electrodomésticos de las variaciones de la red eléctrica.",
-        color: "bg-secondary-600"
+        color: "bg-amber-600"
     },
     {
         icon: <Camera className="w-8 h-8 text-white" />,
