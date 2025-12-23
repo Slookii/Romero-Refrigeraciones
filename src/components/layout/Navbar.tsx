@@ -6,7 +6,7 @@ export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed w-full bg-primary-900/95 backdrop-blur-sm z-50 shadow-md border-b border-white/10">
+        <nav className="fixed w-full bg-blue-900/95 backdrop-blur-sm z-50 shadow-md border-b border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20 items-center">
                     <div className="flex items-center space-x-2">
@@ -43,7 +43,7 @@ export const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-primary-900 border-t border-primary-800"
+                        className="md:hidden bg-blue-900 border-t border-blue-800"
                     >
                         <div className="px-4 pt-2 pb-6 space-y-2">
                             <a href="#inicio" onClick={() => setIsOpen(false)} className="block px-3 py-3 text-base font-medium text-gray-200 hover:bg-primary-800 rounded-lg">Inicio</a>

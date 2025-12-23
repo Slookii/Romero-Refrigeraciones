@@ -6,6 +6,6 @@
   }
 
   body {
-    @apply antialiased text-gray-900 bg-primary-50;
+    @apply antialiased text-gray-900 bg-sky-50;
   }
 }
