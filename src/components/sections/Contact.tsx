@@ -1,6 +1,26 @@
+import { useState } from 'react';
 import { Phone, MapPin, MessageCircle, Clock } from 'lucide-react';
 
 export const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        service: 'Aire Acondicionado - Instalación',
+        message: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const text = `Hola, quiero solicitar un presupuesto.%0A%0A*Nombre:* ${formData.name}%0A*Teléfono:* ${formData.phone}%0A*Servicio:* ${formData.service}%0A*Mensaje:* ${formData.message}`;
+        window.open(`https://wa.me/5493804808109?text=${text}`, '_blank');
+    };
     return (
         <section id="contacto" className="py-20 bg-gray-900 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,23 +77,44 @@ export const Contact = () => {
                     </div>
 
                     <div className="bg-white rounded-2xl p-8 shadow-xl text-gray-900">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <h3 className="text-2xl font-bold mb-6">Solicitar Presupuesto</h3>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Tu nombre" />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                        placeholder="Tu nombre"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                                    <input type="tel" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Tu celular" />
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                        placeholder="Tu celular"
+                                        required
+                                    />
                                 </div>
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Servicio</label>
-                                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white">
+                                <select
+                                    name="service"
+                                    value={formData.service}
+                                    onChange={handleChange}
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+                                >
                                     <option>Aire Acondicionado - Instalación</option>
                                     <option>Aire Acondicionado - Reparación/Carga</option>
                                     <option>Electricidad Domiciliaria</option>
@@ -83,10 +124,18 @@ export const Contact = () => {
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                                <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="¿En qué podemos ayudarte?"></textarea>
+                                <textarea
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    rows={4}
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                    placeholder="¿En qué podemos ayudarte?"
+                                    required
+                                ></textarea>
                             </div>
 
-                            <button type="button" className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
+                            <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
                                 Enviar Consulta
                             </button>
                         </form>
