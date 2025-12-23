@@ -58,13 +58,13 @@ export const Pricing = () => {
                         <div
                             key={index}
                             className={`relative p-8 bg-white/80 backdrop-blur-sm border rounded-2xl flex flex-col ${plan.highlight
-                                ? 'border-primary-500 ring-2 ring-primary-500 shadow-xl scale-105 z-10'
-                                : 'border-gray-200 hover:border-primary-300 transition-colors'
+                                ? 'border-blue-500 ring-2 ring-blue-500 shadow-xl scale-105 z-10'
+                                : 'border-gray-200 hover:border-blue-300 transition-colors'
                                 }`}
                         >
                             {plan.highlight && (
                                 <div className="absolute top-0 right-0 -mr-1 -mt-1 w-32 h-32 overflow-hidden rounded-tr-2xl">
-                                    <div className="absolute top-0 right-0 bg-primary-500 text-white text-xs font-bold px-8 py-1 transform rotate-45 translate-x-8 translate-y-4 shadow-md">
+                                    <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-8 py-1 transform rotate-45 translate-x-8 translate-y-4 shadow-md">
                                         POPULAR
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ export const Pricing = () => {
                                 href={`https://wa.me/5493804123456?text=Hola, me interesa el servicio de ${plan.name}`}
                                 target="_blank"
                                 className={`w-full py-3 px-4 rounded-lg font-bold text-center transition-colors ${plan.highlight
-                                    ? 'bg-primary-600 text-white hover:bg-primary-700'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
                                     : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
                                     }`}
                             >

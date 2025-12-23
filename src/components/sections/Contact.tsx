@@ -15,7 +15,7 @@ export const Contact = () => {
                         <div className="space-y-6">
                             <div className="flex items-start">
                                 <div className="bg-gray-800 p-3 rounded-lg mr-4">
-                                    <Phone className="w-6 h-6 text-primary-400" />
+                                    <Phone className="w-6 h-6 text-blue-400" />
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold text-white">Llamanos</h4>
@@ -63,17 +63,17 @@ export const Contact = () => {
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all" placeholder="Tu nombre" />
+                                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Tu nombre" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                                    <input type="tel" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all" placeholder="Tu celular" />
+                                    <input type="tel" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Tu celular" />
                                 </div>
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Servicio</label>
-                                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all bg-white">
+                                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white">
                                     <option>Aire Acondicionado - Instalación</option>
                                     <option>Aire Acondicionado - Reparación/Carga</option>
                                     <option>Electricidad Domiciliaria</option>
@@ -83,10 +83,10 @@ export const Contact = () => {
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                                <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all" placeholder="¿En qué podemos ayudarte?"></textarea>
+                                <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="¿En qué podemos ayudarte?"></textarea>
                             </div>
 
-                            <button type="button" className="w-full bg-primary-600 text-white font-bold py-4 rounded-lg hover:bg-primary-700 transition-colors shadow-lg shadow-primary-500/30">
+                            <button type="button" className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
                                 Enviar Consulta
                             </button>
                         </form>

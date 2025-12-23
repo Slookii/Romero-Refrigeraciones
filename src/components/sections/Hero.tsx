@@ -4,7 +4,7 @@ import { ArrowRight, MapPin } from 'lucide-react';
 
 export const Hero = () => {
     return (
-        <section id="inicio" className="pt-20 lg:pt-28 relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+        <section id="inicio" className="pt-20 lg:pt-28 relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-secondary-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
 
                 <motion.div
@@ -18,17 +18,17 @@ export const Hero = () => {
                     </div>
 
                     <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-                        Expertos en <span className="text-primary-600">Refrigeración</span> y <span className="text-secondary-500">Electricidad</span>
+                        Expertos en <span className="text-blue-600">Refrigeración</span> y <span className="text-secondary-500">Electricidad</span>
                     </h1>
 
                     <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
                         Soluciones rápidas y garantizadas. Instalación de aires, mantenimiento y obras eléctricas.
                         <br />
-                        <span className="font-semibold text-primary-700">¡Visita técnica GRATIS!</span>
+                        <span className="font-semibold text-blue-700">¡Visita técnica GRATIS!</span>
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <a href="#contacto" className="inline-flex justify-center items-center px-8 py-4 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition-all shadow-lg hover:shadow-primary-500/30 transform hover:-translate-y-1">
+                        <a href="#contacto" className="inline-flex justify-center items-center px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1">
                             Agendar Visita
                             <ArrowRight className="ml-2 w-5 h-5" />
                         </a>

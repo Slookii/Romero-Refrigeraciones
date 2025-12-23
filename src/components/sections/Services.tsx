@@ -7,7 +7,7 @@ const services = [
         icon: <Snowflake className="w-8 h-8 text-white" />,
         title: "Aire Acondicionado",
         description: "Instalación y mantenimiento de equipos Split y Ventana. Carga de gas, limpieza de filtros y reparación de fugas.",
-        color: "bg-primary-500"
+        color: "bg-blue-500"
     },
     {
         icon: <Zap className="w-8 h-8 text-white" />,
@@ -25,7 +25,7 @@ const services = [
         icon: <Settings className="w-8 h-8 text-white" />,
         title: "Mantenimiento Preventivo",
         description: "Chequeo periódico para asegurar el óptimo funcionamiento de tus equipos y prevenir roturas costosas.",
-        color: "bg-primary-600"
+        color: "bg-blue-600"
     },
     {
         icon: <Clock className="w-8 h-8 text-white" />,
@@ -52,7 +52,7 @@ export const Services = () => {
         <section id="servicios" className="py-20 bg-sky-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-base font-semibold text-primary-600 tracking-wide uppercase">Nuestros Servicios</h2>
+                    <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Nuestros Servicios</h2>
                     <p className="mt-2 text-4xl font-extrabold text-gray-900 sm:text-5xl">
                         Soluciones Integrales
                     </p>
