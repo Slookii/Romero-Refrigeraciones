@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Snowflake, Zap, Wrench, ShieldCheck, Clock, Settings, Camera } from 'lucide-react';
 import { motion } from 'framer-motion';
 

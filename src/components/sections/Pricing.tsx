@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Check } from 'lucide-react';
 
 const priceList = [
@@ -58,8 +58,8 @@ export const Pricing = () => {
                         <div
                             key={index}
                             className={`relative p-8 bg-white border rounded-2xl flex flex-col ${plan.highlight
-                                    ? 'border-primary-500 ring-2 ring-primary-500 shadow-xl scale-105 z-10'
-                                    : 'border-gray-200 hover:border-primary-300 transition-colors'
+                                ? 'border-primary-500 ring-2 ring-primary-500 shadow-xl scale-105 z-10'
+                                : 'border-gray-200 hover:border-primary-300 transition-colors'
                                 }`}
                         >
                             {plan.highlight && (
@@ -93,8 +93,8 @@ export const Pricing = () => {
                                 href={`https://wa.me/5493804123456?text=Hola, me interesa el servicio de ${plan.name}`}
                                 target="_blank"
                                 className={`w-full py-3 px-4 rounded-lg font-bold text-center transition-colors ${plan.highlight
-                                        ? 'bg-primary-600 text-white hover:bg-primary-700'
-                                        : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
+                                    ? 'bg-primary-600 text-white hover:bg-primary-700'
+                                    : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
                                     }`}
                             >
                                 Consultar
