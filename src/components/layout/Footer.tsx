@@ -12,7 +12,7 @@ export const Footer = () => {
                     </div>
 
                     <div className="flex space-x-6">
-                        <a href="#" className="hover:text-primary-400 transition-colors">
+                        <a href="https://www.facebook.com/romero.refrigeraciones.2025/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                             <Facebook className="w-6 h-6" />
                         </a>
                         <a href="#" className="hover:text-pink-500 transition-colors">
