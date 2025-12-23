@@ -4,7 +4,8 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
-    @apply antialiased text-gray-900 bg-white;
+    @apply antialiased text-gray-900 bg-primary-50;
   }
 }
