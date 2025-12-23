@@ -4,39 +4,39 @@ import { Check } from 'lucide-react';
 const priceList = [
     {
         name: "Visita Técnica",
-        price: "$5.000",
-        description: "Diagnóstico y presupuesto",
+        price: "GRATIS",
+        description: "Diagnóstico y presupuesto sin cargo",
         features: [
             "Revisión completa de falla",
             "Diagnóstico por escrito",
             "Presupuesto detallado",
-            "Se bonifica si se realiza el trabajo"
+            "Asesoramiento profesional"
         ],
         highlight: false
     },
     {
-        name: "Mantenimiento Aire",
-        price: "$25.000",
-        description: "Limpieza y chequeo completo",
+        name: "Mantenimiento y Sanitización",
+        price: "$60.000",
+        description: "Limpieza profunda y desinfección",
         features: [
-            "Limpieza de unidad interior",
-            "Limpieza de unidad exterior",
-            "Chequeo de gas",
-            "Desinfección de filtros",
+            "Limpieza de unidad interior y exterior",
+            "Sanitización completa",
+            "Chequeo de gas y presiones",
+            "Limpieza de filtros",
             "Prueba de rendimiento"
         ],
         highlight: true
     },
     {
-        name: "Instalación Básica",
-        price: "$55.000",
-        description: "Mano de obra hasta 3000 frigorías",
+        name: "Instalación Aire Acondicionado",
+        price: "$180.000",
+        description: "Instalación profesional garantizada",
         features: [
             "Instalación de unidad interior y exterior",
-            "Vacío de cañerías",
-            "Prueba de hermeticidad",
-            "Garantía de instalación 6 meses",
-            "Materiales no incluidos"
+            "Vacío de cañerías con bomba",
+            "Control de fugas",
+            "Garantía de instalación",
+            "Desinstalación: $60.000"
         ],
         highlight: false
     }

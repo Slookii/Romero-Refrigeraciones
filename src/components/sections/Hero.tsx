@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { BadgeCheck, ArrowRight } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 
 export const Hero = () => {
     return (
@@ -12,17 +12,19 @@ export const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-6">
-                        <BadgeCheck className="w-5 h-5 text-green-500 mr-2" />
-                        <span className="text-sm font-semibold text-gray-700">Técnicos Certificados en La Rioja</span>
+                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-600 text-white shadow-lg mb-8 transform hover:scale-105 transition-transform">
+                        <MapPin className="w-5 h-5 mr-2 animate-bounce" />
+                        <span className="text-base font-bold uppercase tracking-wide">Activo en La Rioja Capital</span>
                     </div>
 
                     <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-                        Expertos en <span className="text-primary-600">Refrigeración</span>, <span className="text-secondary-500">Electricidad</span> y <span className="text-blue-600">Seguridad</span>
+                        Expertos en <span className="text-primary-600">Refrigeración</span> y <span className="text-secondary-500">Electricidad</span>
                     </h1>
 
                     <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
-                        Soluciones rápidas y garantizadas para tu hogar o empresa. Instalación de aires, cámaras de seguridad y sistemas eléctricos.
+                        Soluciones rápidas y garantizadas. Instalación de aires, mantenimiento y obras eléctricas.
+                        <br />
+                        <span className="font-semibold text-primary-700">¡Visita técnica GRATIS!</span>
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -51,25 +53,30 @@ export const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="relative hidden lg:block"
                 >
-                    {/* Abstract blobs background */}
-                    <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-                    <div className="absolute top-0 right-40 w-96 h-96 bg-secondary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-
-                    <div className="relative bg-white p-2 rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <img
-                            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                            alt="Técnico reparando aire acondicionado"
-                            className="rounded-xl w-full h-[500px] object-cover"
-                        />
-                        <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-100">
-                            <div className="flex items-center justify-between mb-2">
-                                <span className="font-bold text-gray-900">Mantenimiento Preventivo</span>
-                                <span className="text-secondary-600 font-bold">★ 5.0</span>
-                            </div>
-                            <div className="w-full bg-gray-200 rounded-full h-2">
-                                <div className="bg-primary-600 h-2 rounded-full w-[95%]"></div>
-                            </div>
-                            <p className="text-xs text-gray-500 mt-2">Más de 500 clientes satisfechos</p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-4 pt-8">
+                            <img
+                                src="/images/hero-1.jpg"
+                                alt="Instalación de aire"
+                                className="rounded-2xl shadow-lg w-full h-48 object-cover hover:shadow-xl transition-shadow duration-300"
+                            />
+                            <img
+                                src="/images/hero-2.jpg"
+                                alt="Mantenimiento"
+                                className="rounded-2xl shadow-lg w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                            />
+                        </div>
+                        <div className="space-y-4">
+                            <img
+                                src="/images/hero-3.jpg"
+                                alt="Técnico trabajando"
+                                className="rounded-2xl shadow-lg w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                            />
+                            <img
+                                src="/images/hero-4.jpg"
+                                alt="Herramientas"
+                                className="rounded-2xl shadow-lg w-full h-48 object-cover hover:shadow-xl transition-shadow duration-300"
+                            />
                         </div>
                     </div>
                 </motion.div>
